@@ -1,0 +1,366 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    /*background:linear-gradient(rgb(35, 69, 163),rgb(255, 255, 255))*/
+    background: #f7f6f6;
+}
+
+.navegacion{
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: white;
+    transition: top 0.3s;
+    z-index: 999;
+    align-items: center;
+}
+@keyframes colorCycle {
+    0% { background-color: #ff0000; } /* Rojo */
+    20% { background-color: #ff6600; } /* Naranja */
+    40% { background-color: #ffcc00; } /* Amarillo */
+    60%{ background-color: rgb(195, 130, 238);}
+    68% { background-color: #b700ff; } /* Verde */
+    80% { background-color: #0066ff; } /* Azul claro */
+    100% { background-color: #0000ff; } /* Azul */
+  }
+.color-cycling-heading {
+    margin-left: 15px;
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+    animation: colorCycle 5s infinite; /* La animación dura 5 segundos y se repite infinitamente */
+  }
+nav{
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    margin-top: 6px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#miLista:hover{
+    cursor: pointer;
+}
+.presentacion{
+    height: 770px;
+}
+
+.imagen-perfil{
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    right: 100px;
+    top: 110px;
+    border-radius: 2em;
+    border: 2px #0000ff00 solid;
+    box-shadow: 10px 10px 30px 15px #8fc5c5;
+}
+.caja-presentacion{
+    position: absolute;
+    top: 110px;
+    height: 250px;
+    left: 65px;
+    line-height: 1.5;
+}
+.presentacion h1{
+    font-size: 65px;
+    font-weight: 600;
+}
+.presentacion p{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+}
+
+.enlace-caja{
+    padding-top: 15px;
+}
+.enlace-caja img{
+    height: 50px;
+    width: 50px;
+}
+.skills{
+    position: absolute;
+    top: 545px;
+    left: 32%;
+    width: 500px;
+    height: 70px;
+    background: white;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#titulo-skills{
+    position: absolute;
+    top: -25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.logos-skills{
+    letter-spacing: 15px;
+}
+.skills img{
+    width: 40px;
+    height: 40px;
+}
+
+.about-me{
+    background: #8080801f;
+    height: 750px;
+}
+
+.about-me h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 65px;
+    color: #8c00fffa;
+    text-underline-offset: 10px;
+}
+
+.caja-about-me{
+    background: #ffffffc9;
+    width: 500px;
+    height: 250px;
+    border-radius: 2em;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 10px gray;
+}
+.caja-about-me p{
+    text-align: center;
+    padding: 45px;
+    line-height: 1.5;
+}
+
+.proyectos{
+    height: 800px;
+}
+
+.proyectos h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 65px;
+    color: #8c00fffa;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 10px;
+}
+
+.caja-de-proyectos{
+    margin: 0 auto;
+    width: 940px;
+    height: 410px;
+    background: #ffffffc9;
+    border-radius: 2em;
+}
+#titulo-proyecto{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 0 125px;
+    padding: 20px;
+    text-decoration: none;
+}
+#tech-utilizada{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 0 125px;
+    padding: 20px;
+    position: absolute;
+    top: 1865px;
+    text-decoration: none;
+}
+
+.caja-de-proyectos p{
+    display: inline;
+    margin: 0 0 0 45px;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.caja-de-proyectos  a img {
+    height: 270px;
+    width: 355px;
+    border-radius: 20px;
+    margin: 0 55px 0 530px;
+    transition: 1s all;
+    
+}
+.caja-de-proyectos a img:hover{
+    box-shadow: 0px 1px 5px 4px blue;
+    transform: scale(1.05);
+}
+.logos-proyectos{
+    position: absolute;
+    margin: 0 0 0 165px;
+    top: 1920px;
+    letter-spacing: 15px;
+}
+.caja-de-proyectos img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.contacto{
+    height: 450px;
+    background: #8080801f;
+}
+
+#titulo-contacto{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 15px;
+    color: #8c00fffa;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 10px;
+}
+
+.caja-mi-contacto{
+    background: #ffffffc9;
+    width: 500px;
+    height: 250px;
+    border-radius: 2em;
+    margin: 0px auto;
+    box-shadow: 5px 5px 15px 10px gray;
+}
+.caja-mi-contacto p{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-left: 35px;
+}
+.mis-contactos{
+    text-align: center;
+    border: 30px;
+    padding: 35px;
+}
+.mis-contactos a{
+    text-decoration: none;
+    color: black;
+
+}
+.mis-contactos img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.final{
+    text-align: center;
+    height: 100px;
+    background: linear-gradient(to right, #ff0000, #0000ff);
+    margin:auto 0 ;
+    display: flex;
+    align-items: center;
+}
+.final p{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:480px) { /*CSS PARA SMARPHONE--------------------------------------------------------------*/
+        .color-cycling-heading {
+            font-size: 12px;
+        }
+        #miLista li{
+            font-size: 12px;
+        }
+        .caja-presentacion h1{
+            font-size: 35px;
+        }
+        .caja-presentacion p{
+            font-size: 13px;
+        }
+        .caja-presentacion{
+            top: 11%;
+            height: 25%;
+            left: 5%;
+        }
+        .enlace-caja img{
+            width: 45px;
+            height: 45px;
+        }
+
+        .imagen-perfil{
+            height: 25%;
+            width: 40%;
+            right: 5%;
+            top: 11%;
+        }
+
+        .skills{
+            left: 10%;
+            width: 80%;
+        }
+        .about-me, .final, .contacto,.proyectos{
+            width: 100%;
+        }
+        .caja-about-me{
+            width: 315px;
+            height: auto;
+        }
+        .caja-mi-contacto{
+            width: 315px;
+        }
+        .caja-de-proyectos{
+            width: 90%;
+            height: 60%;
+        }
+        #titulo-proyecto{
+            margin: 0px 25px;
+        }
+        .caja-de-proyectos p{
+            margin: 0 0 0 23px;
+            font-size: 14px;
+            padding-top: 0;
+        }
+        .caja-de-proyectos a img{
+            max-width: 90%;
+            height: 230px;
+            margin: 45px 0 0px 20px;
+        }
+
+        #tech-utilizada{
+            top: 1980px;
+            margin: 0 19%;
+        }
+        .logos-proyectos{
+            margin: 0 29%;
+            top: 2040px;
+        }
+
+
+
+
+
+
+
+
+
+        .caja-mi-contacto p{
+            margin-left: 0;
+        }
+        .mis-contactos{
+            padding: 35px 0;
+        }
+}
